@@ -1,0 +1,72 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+#startpage {
+	background: url("images/startpage_image.jpg") center repeat-x;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	animation: move 45s linear infinite;
+}
+
+.tiles {
+	margin: 0;
+	padding: 0;
+}
+
+#title {
+	font-family: 'Great Vibes', cursive;
+	font-size: 10em;
+	color: black;
+	margin: auto;
+}
+
+.flexBox {
+	background-color: #2f2f2f;  
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin-left: -5px; 
+}
+
+.tile {
+	background: no-repeat center;
+	background-size: cover; 
+	height: 300px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+.sizeOne {
+	flex: 1;
+	flex-basis: 20%;
+}
+
+.sizeTwo {
+	flex: 2;
+	flex-basis: 33%;
+}
+
+.sizeThree {
+	flex: 3;
+	flex-basis: 66.3%;
+}
+
+@keyframes move { 
+    0%{background-position:50% 50%}
+    12.5%{background-position:75% 50%}
+    25%{background-position:100% 50%}
+    50%{background-position:75% 50%}
+    62.5%{background-position:50% 50%}
+    75%{background-position:25% 50%}
+    87.5%{background-position:0% 50%}
+    100%{background-position:25% 50%}
+}
