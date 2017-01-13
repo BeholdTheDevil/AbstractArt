@@ -9,7 +9,7 @@ body {
 }
 
 #startpage {
-	background: url("images/startpage_image.jpg") center repeat-x;
+	background: url("startpage_image.jpg") center repeat-x;
 	width: 100vw;
 	height: 100vh;
 	display: flex;
@@ -29,7 +29,7 @@ body {
 	margin: auto;
 }
 
-.flexBox {
+#flexBox {
 	background-color: #2f2f2f;  
 	display: flex;
 	flex-flow: row wrap;
