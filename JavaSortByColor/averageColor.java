@@ -13,12 +13,14 @@ public class averageColor {
 
     Image[] images;
     static Color colors[] = {
-            new Color(255,255,255), //white
             new Color(255,0,0), //red
             new Color(255,255,0), //yellow
             new Color(0,255,0), //green
             new Color(0,0,255), //blue
-            new Color(255,0,255), //purple
+            new Color(130,0,255), //purple
+            new Color(255, 140, 0), //orange
+            new Color(255, 0, 130), //pink
+            new Color(0, 255, 255), //cyan
             //new Color(128,128,128), //grey
             //new Color(0,0,0) //black
     };
@@ -38,7 +40,6 @@ public class averageColor {
             for(Image img : images) {
                 if(Double.compare(distanceTo(img.getrgb(), test), distanceTo(img.getClosest(), img.getrgb())) < 0) {
                     img.setClosest(test);
-                    System.out.println("New color: " + img.getClosest());
                 }
             }
         }
@@ -65,25 +66,23 @@ public class averageColor {
             Path newSource;
             String color = "";
             Color cmp = img.getClosest();
-            System.out.println(img.averageColor);
-            System.out.println(img.getClosest());
 
             if (cmp == colors[0]) {
-                color = "white";
+                color = "a_red";
             } else if (cmp == colors[1]) {
-                color = "red";
+                color = "c_yellow";
             } else if (cmp == colors[2]) {
-                color = "yellow";
+                color = "d_green";
             } else if (cmp == colors[3]) {
-                color = "green";
+                color = "f_blue";
             } else if (cmp == colors[4]) {
-                color = "blue";
+                color = "g_purple";
             } else if (cmp == colors[5]) {
-                color = "purple";
+                color = "b_orange";
             } else if (cmp == colors[6]) {
-                color = "grey";
+                color = "h_pink";
             } else if (cmp == colors[7]) {
-                color = "black";
+                color = "e_cyan";
             }
 
             do {

@@ -33,31 +33,32 @@ body {
 	background-color: #2f2f2f;  
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
-	margin-left: -5px; 
+	justify-content: flex-start;
+	/*margin-left: -5px;*/ 
 }
 
 .tile {
 	background: no-repeat center;
 	background-size: cover; 
 	height: 300px;
-	margin-left: 5px;
-	margin-top: 5px;
+	/*margin-left: 5px;*/
+	margin-top: 3px;
 }
 
 .sizeOne {
 	flex: 1;
-	flex-basis: 20%;
+	flex-basis: 17.5%;
+	min-width: 300px;
 }
 
 .sizeTwo {
 	flex: 2;
-	flex-basis: 33%;
+	flex-basis: 25%;
 }
 
 .sizeThree {
 	flex: 3;
-	flex-basis: 66.3%;
+	flex-basis: 33%;
 }
 
 @keyframes move { 
