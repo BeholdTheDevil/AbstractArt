@@ -34,21 +34,31 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
-	/*margin-left: -5px;*/ 
 }
 
 .tile {
 	background: no-repeat center;
 	background-size: cover; 
 	height: 300px;
-	/*margin-left: 5px;*/
 	margin-top: 3px;
+	-webkit-transition: min-width 2s;
+	-moz-transition: min-width 2s;
+	transition: min-width 2s;
+}
+
+.modelImage {
+	height: 500px;
+	min-width: 90%;
+	flex-basis: 90%;
+	margin: 50px;
+	margin-right: 25px;
+	margin-left: 25px;
+	box-shadow: 5px 5px 5px 5px rgb(5, 5, 5);
 }
 
 .sizeOne {
 	flex: 1;
 	flex-basis: 17.5%;
-	min-width: 300px;
 }
 
 .sizeTwo {
