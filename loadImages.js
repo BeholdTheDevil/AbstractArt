@@ -34,8 +34,8 @@ $.ajax({url: dir,
 			}
 		}
 });*/
-
-var fileList = ["/images/a_red_11.jpg", "/images/a_red_3.jpg", "/images/e_cyan_4.jpg", "/images/g_purple_1.jpg", "/images/h_pink_7.png", "/images/a_red_12.jpg", "/images/b_orange_2.jpg", "/images/f_blue_10.jpg", "/images/g_purple_5.png", "/images/a_red_13.jpg", "/images/d_green_14.jpg", "/images/f_blue_9.jpg", "/images/h_pink_6.jpg"];
+var dir = "/AbstractArt/images/";
+var fileList = ["a_red_11.jpg", "a_red_3.jpg", "e_cyan_4.jpg", "g_purple_1.jpg", "h_pink_7.png", "a_red_12.jpg", "b_orange_2.jpg", "f_blue_10.jpg", "g_purple_5.png", "a_red_13.jpg", "d_green_14.jpg", "f_blue_9.jpg", "h_pink_6.jpg"];
 fileList.sort();
 
 for(var i = 0; i < fileList.length; i++) {
