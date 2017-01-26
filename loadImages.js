@@ -7,8 +7,8 @@ $.ajax({url: dir,
 			var index = 0;
 			$(fileextension).each(function() {
 				$(data).find("a:contains(" + fileextension[index] + ")").each(function() {
-					if(fileList.indexOf("/AbstractArt" + this.href.replace(window.location.host, "").replace("http://", "")) == -1) {
-						fileList.push("/AbstractArt" + this.href.replace(window.location.host, "").replace("http://", ""));
+					if(fileList.indexOf("/AbstractArt" + this.href.replace(window.location.host, "").replace("https://", "")) == -1) {
+						fileList.push("/AbstractArt" + this.href.replace(window.location.host, "").replace("https://", ""));
 					}
 				});
 				index = index + 1;
