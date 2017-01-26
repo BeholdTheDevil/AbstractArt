@@ -1,4 +1,4 @@
-var dir = "https://beholdthedevil.github.io/AbstractArt/images";
+var dir = "/images/";
 var fileextension = [".jpg", ".png", ".bmp", ".gif", ".tif"];
 var fileList = [];
 
