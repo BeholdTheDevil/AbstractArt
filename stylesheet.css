@@ -30,20 +30,44 @@ body {
 }
 
 #flexBox {
-	background-color: #2f2f2f;  
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
 }
 
+.ver1 {
+	background-color: #2f2f2f;  
+}
+
+.ver2 {
+	background-color: #AA7939;  
+}
+
+.ver3 {
+	background-color: #AA5739;  
+}
+
+.ver4 {
+	background-color: #29616D;
+}
+
+.ver5 {
+	background-color: #277552;
+}
+
 .tile {
 	background: no-repeat center;
 	background-size: cover; 
+	transition: all 0.5s ease;
 	height: 300px;
 	margin-top: 3px;
-	-webkit-transition: min-width 2s;
-	-moz-transition: min-width 2s;
-	transition: min-width 2s;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	transition: all 2s ease;
+}
+
+.tile:hover {
+	cursor: pointer;
 }
 
 .modelImage {
